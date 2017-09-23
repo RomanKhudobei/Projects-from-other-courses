@@ -14,9 +14,10 @@ def find_files():
             with open(file) as f:
                 if to_search in f.read():
                     result.append(file)
-    print(result)
-    print('Files found: {}'.format(len(result)))
-    files = result
+        for file in result:
+            print(file)
+        print('Files found: {}'.format(len(result)))
+        files = result
 
 
 if __name__ == '__main__':
