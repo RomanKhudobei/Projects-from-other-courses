@@ -1,0 +1,2 @@
+Task:
+    Change size of given pictures in multiple processes and put them into "Result" folder.
