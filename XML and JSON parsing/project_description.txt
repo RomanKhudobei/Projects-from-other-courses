@@ -1,0 +1,2 @@
+Task:
+    Given .json/.xml file from news web-site. Your task is to show up top10 most common words in that news.
