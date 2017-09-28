@@ -36,7 +36,7 @@ def resize_images(images, size, n):
             converting.check_returncode()
             images[index] = 'resized-' + images[index]
         except:
-            print('Somethings went wrong with {}, return code: {}'.format(images[index], converting.returncode))
+            print('Somethings went wrong with {}, return code: {}'.format(images[index], converting.returncode()))
         if not os.path.exists('Result'):
             os.makedirs('Result')
         shutil.move(os.path.realpath(images[index]), os.path.realpath('Result/' + images[index]))
